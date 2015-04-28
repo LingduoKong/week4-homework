@@ -38,7 +38,7 @@
 
 <p>Write a review</p>
 
-<%= form_tag "#{@place.id}/reviews/", :method => 'post' do %>
+<%= form_tag place_reviews_path(@place.id), :method => 'post' do %>
 
   <select name="rating">
     <option>5 star</option>
